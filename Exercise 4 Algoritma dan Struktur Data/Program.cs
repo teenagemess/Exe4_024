@@ -47,24 +47,39 @@ namespace Exercise_4
             Console.WriteLine("\n" + element + " pushed.");
         }
 
-        internal int pop()
+        public void pop()
         {
-            Console.WriteLine("\nThe popped element is: " + top.info);
-            top = top.next; 
+            if(top < 0)
+            {
+                Console.WriteLine("Stack Underflow");
+                return;
+            }
+            else
+            {
+                int value = stack[top--];
+                
+            }
+            Console.WriteLine("\nThe popped element is: " + top);
+             
         }
 
        public void display()
         {
-            Node tmp;
-            if (empty()) 
-                Console.WriteLine("\nStack Empty");
-            else
+            if (top < 0)
             {
-                for(tmp = top; tmp != null; tmp = tmp.next)
+                if (top < 0)
                 {
-                    Console.WriteLine(tmp.info);
+                    Console.WriteLine("Stack Underflow");
+                    return;
                 }
-                Console.WriteLine();
+                else
+                {
+                    Console.WriteLine("Items in the stacks are : ");
+                    for (int rap = top; rap >= 0; rap--)
+                    {
+                        Console.WriteLine(stack[rap]);
+                    }
+                }
             }
         }
         
