@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 4 Algoritma dan Struktur Data", "Exercise 4 Algoritma dan Struktur Data\Exercise 4 Algoritma dan Struktur Data.csproj", "{1AA95F36-AC7B-4597-94F4-7C305E514AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AA95F36-AC7B-4597-94F4-7C305E514AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA95F36-AC7B-4597-94F4-7C305E514AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA95F36-AC7B-4597-94F4-7C305E514AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA95F36-AC7B-4597-94F4-7C305E514AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02684358-646F-4AD3-87E7-B2C07C9D806B}
+	EndGlobalSection
+EndGlobal
