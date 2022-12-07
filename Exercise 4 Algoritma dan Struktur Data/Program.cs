@@ -37,7 +37,7 @@ namespace Exercise_4
 
             fresh.next = top;
             top = fresh;
-            
+            Console.WriteLine("\n" + element + " pushed.");
         }
     }
 }
