@@ -16,7 +16,10 @@ namespace Exercise_4
 
     class Stacks
     {
+        static readonly int MAX = 42;
         Node top;
+        int[] stack = new int[MAX];
+
         public Stacks()
         {
             top = null;
