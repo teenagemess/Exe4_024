@@ -1,15 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Exercise_4_Algoritma_dan_Struktur_Data
+namespace Exercise_4
 {
-    internal class Program
+    
+    class Node
     {
-        static void Main(string[] args)
+        public int info;
+        public Node next;
+        public Node(int i, Node n)
         {
+            info = 1;
+            next = n;
         }
     }
+
+    
 }
+
+
+
+    
