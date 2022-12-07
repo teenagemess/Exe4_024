@@ -17,12 +17,11 @@ namespace Exercise_4
     class Stacks
     {
         static readonly int MAX = 42;
-        Node top;
+        int top;
         int[] stack = new int[MAX];
-
         public Stacks()
         {
-            top = null;
+            top = -1;
         }
 
         bool empty()
@@ -33,17 +32,22 @@ namespace Exercise_4
                 return (false);
         }
 
-        public void push(int element)
+        public bool push(int element)
         {
-            Node fresh;
-            fresh = new Node(element, null);
-
-            fresh.next = top;
-            top = fresh;
+            if (top >= MAX)
+            {
+                Console.WriteLine("Stack Overflow");
+                return false;
+            }
+            else
+            {
+                stack[++top] = element;
+                return true;
+            }
             Console.WriteLine("\n" + element + " pushed.");
         }
 
-        public void pop()
+        internal int pop()
         {
             Console.WriteLine("\nThe popped element is: " + top.info);
             top = top.next; 
